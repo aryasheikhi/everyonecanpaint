@@ -18,18 +18,30 @@ const selectTool = e => {
 
 	if (e.target.parentElement.id === 'text') canvas.style.cursor = 'text';
 
-	Array.from(e.target.parentElement.parentElement.children).forEach(tool => tool.classList.remove('tool-selected'));
+	Array.from(e.target.parentElement.parentElement.children).forEach(tool =>
+		tool.classList.remove('tool-selected')
+	);
 
 	e.target.parentElement.classList.add('tool-selected');
 
 	!!state.currentTool && toolCleanup(state.currentTool);
 
 	switch (e.target.parentElement.id) {
-		case 'text': state.currentTool = textTool;
-		case 'line': state.currentTool = lineTool;
-		case 'circle': state.currentTool = circleTool;
-		case 'spray': state.currentTool = sprayTool;
-		case 'square': state.currentTool = squareTool;
+		case 'text':
+			state.currentTool = textTool;
+			break;
+		case 'line':
+			state.currentTool = lineTool;
+			break;
+		case 'circle':
+			state.currentTool = circleTool;
+			break;
+		case 'spray':
+			state.currentTool = sprayTool;
+			break;
+		case 'square':
+			state.currentTool = squareTool;
+			break;
 	}
 };
 
