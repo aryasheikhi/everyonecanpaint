@@ -5,6 +5,8 @@ app.use((req, res) => {
     res.sendFile('index.html');
 });
 
-app.listen(80);
+const port = process.env.PORT || 4000;
 
-console.log('Server running on port 80');
+app.listen(port);
+
+console.log(`Server running on port ${port}`);
