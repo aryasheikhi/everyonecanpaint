@@ -46,4 +46,3 @@ const selectTool = e => {
 };
 
 document.addEventListener('DOMContentLoaded', calculateSizes);
-window.addEventListener('resize', calculateSizes);
