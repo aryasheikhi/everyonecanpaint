@@ -13,42 +13,42 @@
 			<div id="app">
 				<div id="topBar">
 					<div id="clearWrapper" class="option" onclick="clearCanvas(event)">
-						<div class="option-icon" title="پاک‌کن">
-							<img src="./assets/vectors/eraser.svg" alt="پاک‌کن"/>
+						<div class="option-icon" title="eraser">
+							<img src="./assets/vectors/eraser.svg" alt="eraser"/>
 						</div>
 					</div>
 					
 					<div id="textToolPreferences" class="option">
-						<label for="fontSize">قلم</label>
-						<select id="fontSizeSelector" type="select" title="اندازه‌ی قلم" dir="ltr" onchange="textTool.setFontSize(event)">
-							<option value="8">۸</option>
-							<option value="9">۹</option>
-							<option value="10">۱۰</option>
-							<option value="11">۱۱</option>
-							<option value="12">۱۲</option>
-							<option value="14">۱۴</option>
-							<option value="16">۱۶</option>
-							<option value="18">۱۸</option>
-							<option value="20">۲۰</option>
-							<option value="22">۲۲</option>
-							<option value="24">۲۴</option>
-							<option value="26">۲۶</option>
-							<option value="28">۲۸</option>
-							<option value="36">۳۶</option>
-							<option value="48">۴۸</option>
-							<option value="72">۷۲</option>
+						<label for="fontSize">font</label>
+						<select id="fontSizeSelector" type="select" title="font size" dir="ltr" onchange="textTool.setFontSize(event)">
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="14">14</option>
+							<option value="16">16</option>
+							<option value="18">18</option>
+							<option value="20">20</option>
+							<option value="22">22</option>
+							<option value="24">24</option>
+							<option value="26">26</option>
+							<option value="28">28</option>
+							<option value="36">36</option>
+							<option value="48">48</option>
+							<option value="72">72</option>
 						</select>
 					</div>
 					
 					<div id="uploader" dir="rtl" class='option'>
 						<input id="uploadPicture" type="file" accept="image/png, image/jpeg" name="uploadPicture" dir="ltr" oninput="uploadPicture(event)" />
-						<button id="uploadMimicker" type="button" onclick="mimick()">انتخاب عکس</button>
+						<button id="uploadMimicker" type="button" onclick="mimick()">choose photo</button>
 					</div>
 					
 					<form id="saveForm" action="javascript:void(0);">
 						<div id="saveWrapper" class="option" onclick="save(event)">
-							<div class="option-icon" title="ذخیره">
-								<img src="./assets/vectors/save.svg" alt="پاک‌کن"/>
+							<div class="option-icon" title="save">
+								<img src="./assets/vectors/save.svg" alt="save"/>
 							</div>
 						</div>
 						<div id="saver">
@@ -65,23 +65,23 @@
 				</div>
 				<div id="bottomBar">
 					<div id="tools">
-						<div id="text" class="tool-picker" title="نوشتن متن">
-							<img src="./assets/vectors/text.svg" alt="متن" onclick="textTool.init(event)" />
+						<div id="text" class="tool-picker" title="write text">
+							<img src="./assets/vectors/text.svg" alt="text" onclick="textTool.init(event)" />
 						</div>
-						<div id="circle" class="tool-picker" title="کشیدن دایره">
-							<img src="./assets/vectors/circle.svg" alt="دایره" onclick="circleTool.init(event)" />
+						<div id="circle" class="tool-picker" title="draw circle">
+							<img src="./assets/vectors/circle.svg" alt="circle" onclick="circleTool.init(event)" />
 						</div>
-						<div id="spray" class="tool-picker" title="اسپری کردن رنگ">
-							<img src="./assets/vectors/spray.svg" alt="اسپری" onclick="sprayTool.init(event)" />
+						<div id="spray" class="tool-picker" title="spray">
+							<img src="./assets/vectors/spray.svg" alt="spray" onclick="sprayTool.init(event)" />
 						</div>
-						<div id="colorPicker" class="tool-picker" title="انتخاب رنگ">
-							<input id="colorWheel" type="color" name="colorWheel" value="#ff0000" title="انتخاب رنگ" onchange="changeColor(event)" />
+						<div id="colorPicker" class="tool-picker" title="choose color">
+							<input id="colorWheel" type="color" name="colorWheel" value="#ff0000" title="choose color" onchange="changeColor(event)" />
 						</div>
-						<div id="line" class="tool-picker" title="خط کشیدن">
-							<img src="./assets/vectors/line.svg" alt="خط کشیدن" onclick="lineTool.init(event)" />
+						<div id="line" class="tool-picker" title="draw line">
+							<img src="./assets/vectors/line.svg" alt="draw line" onclick="lineTool.init(event)" />
 						</div>
-						<div id="square" class="tool-picker" title="کشیدن مربع">
-							<img src="./assets/vectors/square.svg" alt="مربع" onclick="squareTool.init(event)" />
+						<div id="square" class="tool-picker" title="square">
+							<img src="./assets/vectors/square.svg" alt="square" onclick="squareTool.init(event)" />
 						</div>
 					</div>
 
